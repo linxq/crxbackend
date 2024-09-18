@@ -22,8 +22,7 @@ export class ImageService {
   }
   async sts(): Promise<Object> {
     let sts = new STS({
-      accessKeyId: 'LTAI5tQri2otSVAJWAnmANHu',
-      accessKeySecret: 'VsViYLBCZQlQsPMPA1YE2GIX9l67Wg',
+
     });
     const info = await sts.assumeRole(
       'acs:ram::1130971307921211:role/ramoss',
